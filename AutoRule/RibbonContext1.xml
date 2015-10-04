@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabMail">
+        <group id="AutoRule" label="AutoRule">
+          <button id="RuleifyInbox" label="Ruleify Inbox" size="large" onAction="RuleifyInbox" imageMso="MenuPublish" />
+          <button id="CheckAutoRuleExpiry" label="Check Expiry" size="large" onAction="CheckAutoRuleExpiry" imageMso="QueryDelete" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+  <contextMenus>    
+    <contextMenu idMso="ContextMenuMailItem">
+      <button id="CreateAutoRule_ctxt" label="Create AutoRule" onAction="CreateAutoRule" imageMso="MenuPublish"/>
+      <button id="ChangeAutoRule_ctxt" label="Change AutoRule" onAction="ChangeAutoRule" imageMso="MenuPublish"/>
+      <button id="FindInSubfolders_ctxt" label="Find In Subfolders" onAction="FindInSubfolders" imageMso="LookUp"/>
+    </contextMenu>
+    <contextMenu idMso="ContextMenuMultipleItems">
+      <button id="CreateAutoRule_multiple_ctxt" label="Create AutoRules" onAction="CreateAutoRule" imageMso="MenuPublish"/>
+      <button id="ChangeAutoRule_multiple_ctxt" label="Change AutoRules" onAction="ChangeAutoRule" imageMso="MenuPublish"/>
+    </contextMenu>
+<!--
+    <contextMenu idMso="ContextMenuFolder">
+      <button id="RuleifyInbox_ctxt" label="Ruleify Inbox" onAction="RuleifyInbox" imageMso="MenuPublish" />
+      <button id="CheckAutoRuleExpiry_ctxt" label="Check Expiry" onAction="CheckAutoRuleExpiry" imageMso="QueryDelete" />
+    </contextMenu>
+-->
+  </contextMenus>
+</customUI>
+
