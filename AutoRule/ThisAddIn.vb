@@ -501,7 +501,7 @@ Public Class ThisAddIn
     Public Shared Function CleanSubject(ByVal oldStr As String) As String
         Dim NewStr As String
 
-        NewStr = oldStr
+        NewStr = RTrim(oldStr)
         If Left(oldStr, 3).ToUpper = "RE:" Then
             NewStr = Trim(Mid(oldStr, 4, Len(oldStr) - 3))
         End If
